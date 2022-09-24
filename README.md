@@ -15,8 +15,8 @@ If you can guess the correct word before full image is generated - you win!
 Install hangman2 with npm
 
 ```bash
-  npm install hangman2
-  cd hangman2
+  cd Hangman
+  npm install
 ```
     
 ## Run Locally
@@ -24,13 +24,13 @@ Install hangman2 with npm
 Clone the project
 
 ```bash
-  git clone https://github.com/Tequential/Hangman
+  git clone https://github.com/Tequential/Hangman.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd hangman2
+  cd Hangman
 ```
 
 Install dependencies
