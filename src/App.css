@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+img {
+  border-style: solid;
+  border-color: rgb(168, 156, 192);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img1 {
+  background-image: url("./hangmandrawings/state1.GIF");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img2 {
+  background-image: url("./hangmandrawings/state2.GIF");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img3 {
+  background-image: url("./hangmandrawings/state3.GIF");
+}
+
+.img4 {
+  background-image: url("./hangmandrawings/state4.GIF");
+}
+
+.img5 {
+  background-image: url("./hangmandrawings/state5.GIF");
+}
+
+.img6 {
+  background-image: url("./hangmandrawings/state6.GIF");
+}
+
+.img7 {
+  background-image: url("./hangmandrawings/state7.GIF");
+}
+
+.img8 {
+  background-image: url("./hangmandrawings/state8.GIF");
+}
+
+.img9 {
+  background-image: url("./hangmandrawings/state9.GIF");
+}
+
+.img10 {
+  background-image: url("./hangmandrawings/state10.gif");
+}
+
+.img11 {
+  background-image: url("./hangmandrawings/state11.GIF");
+}
+
+.noHelp {
+  display:none;
+}
+
+.help {
+  display:flex;
+}
+
+.popup-content {
+  padding: 30px;
+  color: #787878;
+  background-color: #fcf7f8;
+  border: 1px solid rgba(0,0,0,.05);
+}
+
+body, #root {
+  background-color: #4a426d;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 20px 0 0;
+}
+
+.game-container {
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 450px;
+  width: 550px;
+}
+
+.btn {
+  background-color: #92bcf7;
+}
+
+.wrong-letters-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.wrong-letters-container p {
+  margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
+  font-size: 24px;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-top:50px;
+  transform: translateX(-50%);
+}
+
+.letter {
+  border-bottom: 3px solid rgb(168, 156, 192);
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.help-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #754dda;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #2980b9;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.notification-container {
+  background-color: rgba(210, 109, 109, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p {
+  margin: 0;
+}
+
+.notification-container.show {
+  transform: translateY(-50px);
 }
