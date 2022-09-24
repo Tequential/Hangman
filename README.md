@@ -1,7 +1,7 @@
 
 # Hangman
 
-A simple game of hangman. A randomw word is chose from a dictionary (dictionary.txt).
+A simple game of hangman. A random word is chosen from a dictionary (dictionary.txt).
 
 You guess the word, letter by letter with your keyboard.
 For each incorrect guess, the image will change.
